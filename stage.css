@@ -1,0 +1,18 @@
+#app,
+#modal-root div:nth-of-type(1),
+body {
+  border: 10px solid gold !important;
+}
+
+header > div,
+header {
+  background: gold !important;
+}
+
+#modal-root div div:nth-of-type(1) {
+  border: none !important;
+} 
+
+#modal-root > div > div {
+  border: 10px solid gold !important;
+}

@@ -1,11 +1,16 @@
 {
-  "name": "Alert! Production!",
+  "name": "Alert! You are working on HomeLight Production or Staging!",
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["*://loan-officers.homelight.com/*"],
-      "css": ["myStyles.css"]
+      "matches": ["*://*.homelight.com/*"],
+      "css": ["stage.css"]
+    },
+    {
+      "matches": ["*://*.homelight.com/*"],
+      "exclude_globs": ["*staging*"],
+      "css": ["prod.css"]
     }
   ]
 }
