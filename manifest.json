@@ -9,7 +9,7 @@
     },
     {
       "matches": ["*://*.homelight.com/*"],
-      "exclude_globs": ["*staging*"],
+      "exclude_globs": ["*staging*", "*demo*"],
       "css": ["prod.css"]
     }
   ]
